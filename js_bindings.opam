@@ -1,0 +1,30 @@
+opam-version: "2.0"
+name: "js_bindings"
+version: "0.1"
+synopsis: "Bindings JavaScript pour OCaml via gen_js_api"
+description: """
+An OCaml library to interact with JavaScript, using gen_js_api.
+"""
+maintainer: "sbriais@free.fr"
+authors: "Sébastien Briais"
+license: "MIT"
+homepage: "https://github.com/sbriais/js_bindings"
+bug-reports: "https://github.com/sbriais/js_bindings/issues"
+dev-repo: "git+https://github.com/sbriais/js_bindings.git"
+
+depends: [
+  "ocaml" {>= "4.12.0"}
+  "dune" {>= "3.0"}
+  "gen_js_api"
+]
+
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+
+tags: [
+  "javascript"
+  "bindings"
+  "gen_js_api"
+]
+

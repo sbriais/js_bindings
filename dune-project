@@ -1,0 +1,7 @@
+(lang dune 3.0)
+(name js_bindings)
+(version 0.1)
+(license MIT)
+(authors "Sébastien Briais")
+(maintainers "sbriais@free.fr")
+(source (github sbriais/js_bindings))
